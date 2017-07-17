@@ -8,7 +8,7 @@ spec:
   serviceAccountName: prometheus
   alerting:
     alertmanagers:
-    - namespace: monitoring-demo
+    - namespace: cicd-demo
       name: alertmanager-helloworld
       port: web
   serviceMonitorSelector:
@@ -21,4 +21,4 @@ spec:
   ruleSelector:
     matchLabels:
       role: prometheus-rulefiles
-      prometheus: prometheus-helloworld 
+      prometheus: prometheus-helloworld
